@@ -1,0 +1,39 @@
+.container {
+    display:grid;
+}
+
+.ct1{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ct2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+}
+
+.ct1 .item:nth-child(1){
+    grid-column: 2/3;
+}
+
+.ct1 .item:nth-child(2){
+    grid-column: 4/5;
+}
+
+.ct2 .item:nth-child(1){
+    grid-column: 2/3;
+}
+
+.item{
+    background-color: lavender;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+button:hover{
+    /*color: darkgray;*/
+    background-color: darkgray;
+}

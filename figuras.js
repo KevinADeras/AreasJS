@@ -1,7 +1,7 @@
 //Código de cuadrado
 
 const perimetroCuadrado = (lado)=> lado * 4;
-const area = (lado) => lado * lado;
+const areaCuadrado = (lado) => lado ** 2;
 
 //Código del triángulo
 
@@ -12,4 +12,18 @@ const areaTriangulo = (base, altura) => (base * alturaT)/2;
 
 const pi = Math.PI;
 const circunferencia = (radio) => radio * 2 * pi;
-const areaCirculo = (radio) => radio * radio * pi;
+const areaCirculo = (radio) => (radio ** 2) * pi;
+
+//--------------------------------------------
+//Interacción con HTML
+
+function cPerimetroCuadrado(){
+    const valorInput = document.getElementById("inputCuadrado").value;
+    alert(perimetroCuadrado(valorInput));
+}
+
+function cAreaCuadrado(){
+    const valorInput = document.getElementById("inputCuadrado").value;
+    alert(areaCuadrado(valorInput));
+}
+
