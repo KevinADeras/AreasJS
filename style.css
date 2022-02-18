@@ -1,3 +1,7 @@
+header{
+    text-align: center;
+}
+
 .container {
     display:grid;
 }
@@ -27,13 +31,70 @@
 
 .item{
     background-color: lavender;
-    width: 250px;
+    width: 350px;
     height: 300px;
     margin: 10px;
+    border-radius: 20%;
 }
 
+.formcontainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+.formcontainer:nth-child(1){
+    grid-row: 1/2;
+    margin-top: 50px;
+}
+
+.formcontainer:nth-child(2){
+    grid-row: 2/3;
+}
+
+.formcontainer:nth-child(3){
+    grid-row: 3/3;
+}
+
+.formcontainer:nth-child(4){
+    grid-row: 3/3;
+}
+
+button{
+    width: 160px;
+    align-items: center;
+}
+
+input{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label{
+    text-align: center;
+}
 
 button:hover{
     /*color: darkgray;*/
     background-color: darkgray;
+}
+
+.componente{
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    border-radius: 4px;
+    width: 130px;
+    margin-left: 5px;
+   /* align-items: center;*/
+}
+.form{
+    vertical-align: middle;
 }
