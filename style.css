@@ -59,9 +59,8 @@ header{
     grid-row: 3/3;
 }
 
-button{
-    width: 160px;
-    align-items: center;
+.mensaje{
+    font-weight: 200;
 }
 
 input{
@@ -89,8 +88,14 @@ button:hover{
     justify-content: center;
 }
 
+button{
+    padding: 15px;
+    margin-top: 10px;
+    width: 160px;
+    /*align-items: center;*/
+}
+
 .boton{
-    border-radius: 4px;
     width: 130px;
     margin-left: 5px;
    /* align-items: center;*/
