@@ -1,100 +1,43 @@
+*{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
 header{
+    display: grid;
+    width: 100%;
+    min-width: 290px;
+    height: 60px;
     text-align: center;
+    align-content: center;
+    font-size: 3rem;
+    background-color: #d9eee1;
+    color: black;
+    font-weight: bold;
 }
 
-.container {
-    display:grid;
-}
-
-.ct1{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.ct2{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-}
-
-.ct1 .item:nth-child(1){
-    grid-column: 2/3;
-}
-
-.ct1 .item:nth-child(2){
-    grid-column: 4/5;
-}
-
-.ct2 .item:nth-child(1){
-    grid-column: 2/3;
-}
-
-.item{
-    background-color: lavender;
-    width: 350px;
-    height: 300px;
-    margin: 10px;
-    border-radius: 20%;
-}
-
-.formcontainer{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-}
-
-.formcontainer:nth-child(1){
-    grid-row: 1/2;
-    margin-top: 50px;
-}
-
-.formcontainer:nth-child(2){
-    grid-row: 2/3;
-}
-
-.formcontainer:nth-child(3){
-    grid-row: 3/3;
-}
-
-.formcontainer:nth-child(4){
-    grid-row: 3/3;
-}
-
-button{
-    width: 160px;
-    align-items: center;
-}
-
-input{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-label{
-    text-align: center;
-}
-
-button:hover{
-    /*color: darkgray;*/
-    background-color: darkgray;
-}
-
-.componente{
-    padding-top: 2px;
-    margin-bottom: 2px;
-}
-
-.botones{
+.main-container--item{
     display: flex;
-    justify-content: center;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    max-width: 350px;
+    height: 200px;
+    margin: 15px auto;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    font-size: 2.5rem;
 }
 
-.boton{
-    border-radius: 4px;
-    width: 130px;
-    margin-left: 5px;
-   /* align-items: center;*/
+.main-form--div{
+    width: 80%;
+    height: auto;
+
 }
-.form{
-    vertical-align: middle;
+
+.main-form-div--botones{
+
 }

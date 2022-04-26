@@ -8,46 +8,29 @@
     <title>Figuras Geométricas Curso Platzi</title>
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <h1>Calculadora De Figuras Geométricas</h1>
     </header>
 
-    <section>
-        <div class="container ct1">
-            <div class="item">
-                <form class="form" action="">
-                    <div class="container formcontainer">
-                        <label class="mensaje componente" for="inputCuadrado">Ingresa el valor del lado del cuadrado:</label>
+    <main class="main-container">
+        <section class="main-container--item">
+            <h2>Cuadrado</h2>
+            <form class="main-container--form" action="">
+                <div class="main-form--div">
+                    <label class="mensaje componente" for="inputCuadrado">Ingresa el valor del lado del cuadrado:
                         <input class="dato componente" id="inputCuadrado" type="number">
-                        <div class="botones">
-                            <button class="boton componente" type="button" onclick="cAreaCuadrado()">Calcular Área</button>
-                            <button class="boton componente" type="button" onclick="cPerimetroCuadrado()">Calcular Perímetro</button>    
-                        </div>
+                    </label>
+                    <div class="main-form-div--botones">
+                        <button class="boton componente" type="button" onclick="cAreaCuadrado()">Calcular Área</button>
+                        <button class="boton componente" type="button" onclick="cPerimetroCuadrado()">Calcular Perímetro</button>    
                     </div>
-                </form>
-            </div>
-            <div class="item">
-                <form action="">
-                    <label for="inputCuadrado">Ingresa el valor del lado del cuadrado:</label>
-                    <input id="inputCuadrado" type="number">
-        
-                    <button type="button" onclick="cAreaCuadrado()">Calcular Área</button>
-                    <button type="button" onclick="cPerimetroCuadrado()">Calcular Perímetro</button>
-                </form>
-            </div>
-        </div>  
-        <div class="container ct2">
-            <div class="item">
-                <form action="">
-                    <label for="inputCuadrado">Ingresa el valor del lado del cuadrado:</label>
-                    <input id="inputCuadrado" type="number">
-        
-                    <button type="button" onclick="cAreaCuadrado()">Calcular Área</button>
-                    <button type="button" onclick="cPerimetroCuadrado()">Calcular Perímetro</button>
-                </form>
-            </div>
-        </div>   
-    </section>
+                </div>
+            </form>
+        </section>  
+    </main>
+    <footer class="footer-container">
+        <p>Derechos @kamejia 2022</p>
+    </footer>
     
     <script src="./figuras.js"></script>
 </body>
